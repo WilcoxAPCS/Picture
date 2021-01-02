@@ -1,2 +1,2 @@
 language = "java_swing"
-run = "javac src/*.java;cd src;java Picture"
+run = "clear;rm classes/*.class;javac -classpath .:/run_dir/hamcrest-core-1.3.jar:/run_dir/junit-4.12.jar -d classes/ src/*.java;java -classpath .:/run_dir/hamcrest-core-1.3.jar:/run_dir/junit-4.12.jar:classes Picture"
